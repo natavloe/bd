@@ -1,4 +1,4 @@
-# bd
+# Шпора
 Вставка данных в таблицу: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
 
 Выборка данных из таблицы: SELECT * FROM table_name;
@@ -44,8 +44,7 @@ INT в SQL обозначает тип данных, используемый д
 DATE в SQL используется для хранения дат
 
 
-
-bd al
+# Практика 1
 1) Выберите из таблицы orders все заказы
 
 SELECT * FROM orders 
@@ -71,3 +70,10 @@ SELECT * FROM orders
 SELECT id,SUM FROM orders WHERE products_count > 3
 
 ![image](https://github.com/user-attachments/assets/c898ea57-71a9-4a87-bc6c-c47fb1e305af)
+
+# Практика 2
+1. Выберите из таблицы orders 3 самых дешевых заказа за всё время. Данные нужно отсортировать в порядке убывания цены. Отмененные заказы не учитывайте.
+![image](https://github.com/user-attachments/assets/dedba738-05c2-45b3-9fd8-34f374294576)
+SELECT * FROM orders WHERE STATUS != 'cancelled' ORDER BY sum ASC LIMIT 3
+
+
